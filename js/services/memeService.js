@@ -46,3 +46,7 @@ function getMeme(){
 function getImgs() {
     return gImgs
 }
+
+function setLineTxt(){
+    
+}

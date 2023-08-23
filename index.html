@@ -15,12 +15,24 @@
     </section>
 
     <div class="part2">
+
         <section class="editor">
-            <input type="text" id="my-text"  placeholder="enter text... " style="display: none;">    
+            <button class="backGallery" onclick="goBack()">Back Gallery ←</button>
+            <input type="text" id="my-text" placeholder="enter text... " style="display: none; font-size: 50px;>
+            <label for="fontSelector">Select a Font:</label>
+            <select id="fontSelector">
+                <option value="font-name-1">Ariel</option>
+                <option value="font-name-2">David</option>
+
+                <input type="color" id="textColorPicker" value="#000000" oninput="handleColorInput(this.value)">
+                <button class="increaseFontSizeBtn" onclick="onIncreaseFontSize()">➕</button>
+                <button class="decreaseFontSizeBtn" onclick="onDecreaseFontSize()">➖</button>
+
+            </select>
         </section>
-    
+
         <div class="canvas-continer">
-            <canvas id="my-canvas"  width="500" height="500">
+            <canvas id="my-canvas" width="500" height="500">
             </canvas>
         </div>
     </div>
